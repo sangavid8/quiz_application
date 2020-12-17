@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+<style>
+body {
+background:url("index1.jpeg");
+background-attachment:fixed;
+background-size:100% 100%;
+font-family: "sofia", sans-serif;}
+ 
+* {box-sizing: border-box;}
+
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 30%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background:  #4B371C;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 90%;
+  padding: 10px;
+  outline: none;
+
+}
+
+.input-field:focus {
+  border: 2px solid  #4B371C;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4B371C;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+
+  <h2 style="padding-top:15%;padding-left:2%;font-size:30px;color:#FEE227;text-shadow:5px 5px 6px black;" class="font-effect-emboss">QUIZ</h2>
+<h2 style="padding-left:7%;font-size:30px;color:#FEE227;text-shadow:5px 5px 6px black;" class="font-effect-emboss">REGISTRATION</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email">
+  </div>
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="psw">
+  </div>
+
+  <button type="submit" class="btn" onclick="document.location='quiz.html'">Proceed to Test</button>
+
+
+</body>
+</html>
